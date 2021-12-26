@@ -1,0 +1,82 @@
+$pink-color: hsl(322, 100%, 66%);
+$light-pink-color: hsl(321, 100%, 78%);
+$light-red-color: hsl(0, 100%, 63%);
+$dark-cyan-color: hsl(192, 100%, 9%);
+$pale-blue-color: hsl(207, 100%, 98%);
+$website-width: 1100px;
+// Utilities
+.container {
+	max-width: $website-width;
+	padding: 1rem 1.5rem;
+	margin: auto;
+	overflow: hidden;
+}
+.btn {
+	background: $pink-color;
+	color: $pale-blue-color;
+	padding: 1rem 3rem;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	&-main {
+		padding: 1.3rem 5.5rem;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+			rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+		letter-spacing: 0.5px;
+		font-weight: 600;
+		font-size: 1.2rem;
+		transition: all 0.2s;
+		&:hover {
+			background: $light-pink-color;
+		}
+	}
+	&-sub {
+		padding: 1rem 3rem;
+		border-radius: 5px;
+		font-size: 1rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+		transition: all 0.2s;
+		outline: none;
+		&:hover {
+			background-color: $light-pink-color;
+		}
+		&:active {
+			transform: translate(0, 0.1rem);
+		}
+	}
+	&-outline {
+		background-color: transparent;
+		color: $pink-color;
+		border: 1px solid $pink-color;
+		padding: 0.5rem 2rem;
+		transition: all 0.2s;
+		&:hover {
+			background-color: $pink-color;
+			color: $pale-blue-color;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		}
+	}
+}
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.flex-footer {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+}
+h1,
+h2,
+h3 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.error-message {
+	color: $light-red-color !important;
+}
+.success-message {
+	color: #2fdd92 !important;
+}
