@@ -1,63 +1,5 @@
 @media (max-width: 800px) {
 }
-// SmartPhones
-@media (max-width: 320px) {
-	#main-header {
-		#main-nav {
-			button {
-				padding: 0.5rem 1rem;
-				margin: 1rem 0.5rem;
-			}
-		}
-		.container {
-			padding: 0 1rem;
-			.heading-content {
-				margin-top: 1rem;
-				margin-bottom: 1rem;
-				h1 {
-					margin: 0;
-					padding: 0;
-					font-size: 1rem;
-				}
-				p {
-					padding: 0;
-					font-size: 0.8rem;
-				}
-				button {
-					padding: 0.8rem 1.5rem;
-					font-size: 0.8rem;
-				}
-				img {
-					margin: 2rem 0;
-				}
-			}
-		}
-	}
-
-	#features {
-		.feature {
-			&-primary {
-				&:before {
-					top: -134px !important;
-				}
-				&:after {
-					bottom: -134px !important;
-				}
-			}
-			&-secondary {
-				&:before {
-					top: -180px !important;
-				}
-				&:after {
-					bottom: -180px !important;
-				}
-			}
-		}
-	}
-	#main-footer {
-		margin-top: 5rem;
-	}
-}
 // extra small (5/SE)
 @media (max-width: 500px) {
 	#main-header {
@@ -206,11 +148,12 @@
 		}
 	}
 	#main-footer {
-		&:before {
+			&:before {
 			content: '';
-			background: url('../images/bg-footer-top-mobile.svg') no-repeat center
-				center/auto;
-			top: -31%;
+			background: url('../images/bg-footer-top-mobile.svg');
+			top: -5%;
+			background-repeat: no-repeat;
+			background-size: contain ;
 		}
 		.container {
 			padding: 0;
@@ -261,6 +204,64 @@
 	}
 }
 
+// SmartPhones
+@media (max-width: 320px) {
+	#main-header {
+		#main-nav {
+			button {
+				padding: 0.5rem 1rem;
+				margin: 1rem 0.5rem;
+			}
+		}
+		.container {
+			padding: 0 1rem;
+			.heading-content {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				h1 {
+					margin: 0;
+					padding: 0;
+					font-size: 1rem;
+				}
+				p {
+					padding: 0;
+					font-size: 0.8rem;
+				}
+				button {
+					padding: 0.8rem 1.5rem;
+					font-size: 0.8rem;
+				}
+				img {
+					margin: 2rem 0;
+				}
+			}
+		}
+	}
+
+	#features {
+		.feature {
+			&-primary {
+				&:before {
+					top: -134px !important;
+				}
+				&:after {
+					bottom: -134px !important;
+				}
+			}
+			&-secondary {
+				&:before {
+					top: -180px !important;
+				}
+				&:after {
+					bottom: -180px !important;
+				}
+			}
+		}
+	}
+	#main-footer {
+		margin-top: 5rem;
+	}
+}
 //Landscape
 @media (max-height: 580px) {
 	#main-header {
